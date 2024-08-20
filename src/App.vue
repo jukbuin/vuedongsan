@@ -5,7 +5,7 @@
       <p>{{products[selectedIndex].content}}</p>
       <button @click="모달창열렸니 = false">닫기</button>
     </div>
-  </div>
+  </div> <!-- 모달창 -->
 
   <div class="menu">
     <a v-for="(a,i) in menu" :key="i">{{a}}</a>
@@ -15,23 +15,7 @@
     <img :src="products[i].image" class="room-img">
     <h4 @click="openModal(i)" class="clickable">{{products[i].title}}</h4>
     <p>{{products[i].price}}만원</p>
-  </div> 
-
-
-
-  <!-- <div>
-    <h4>{{products[0]}}</h4>
-    <p>50만원</p>
-    <button @click="increase">허위매물신고</button> <span>신고수 : {{신고수}}</span>
-  </div>
-    <div>
-    <h4>{{products[1]}}</h4>
-    <p>60만원</p>
-  </div>
-    <div>
-    <h4>{{products[2]}}</h4>
-    <p>70만원</p>
-  </div> -->
+  </div> <!-- products -->
 </template>
 
 <script>
